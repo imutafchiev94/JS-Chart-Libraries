@@ -1,0 +1,8 @@
+<div class="card-container">
+    <div class="card" *ngFor="let chart of charts">
+      <a [routerLink]="chart.link">
+        <img [src]="chart.image" alt="{{ chart.title }}" class="card-image" />
+      </a>
+      <span class="card-title">{{ chart.title }}</span>
+    </div>
+  </div>

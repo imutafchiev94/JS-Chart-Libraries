@@ -1,0 +1,21 @@
+
+
+<div>
+    <!-- Chart Display -->
+    <div>
+      <highcharts-chart
+        [Highcharts]="Highcharts"
+        [options]="chartOptions"
+        (chartInstance)="saveChart($event)"
+        style="width: 100%; height: 400px; display: block;">
+      </highcharts-chart>
+    </div>
+  
+    <!-- Buttons to Change Chart -->
+    <div style="margin-top: 20px;">
+      <button (click)="changeSeriesType('bar')">Bar Chart</button>
+      <button (click)="changeSeriesType('line')">Line Chart</button>
+      <button (click)="changeSeriesType('pie')">Pie Chart</button>
+      <button (click)="changeSeriesType('area')">Area Chart</button>
+    </div>
+  </div>

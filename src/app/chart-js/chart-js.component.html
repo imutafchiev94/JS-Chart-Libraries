@@ -1,0 +1,19 @@
+<div>
+    <!-- Chart Display -->
+    <div style="height: 400px; width: 600px; margin: auto;">
+        <canvas baseChart 
+                [data]="chartData" 
+                [options]="chartOptions" 
+                [type]="chartType">
+        </canvas>
+      </div>
+  
+    <!-- Buttons to Change Chart -->
+    <div style="margin-top: 20px;">
+      <button (click)="changeChartType('bar')">Bar Chart</button>
+      <button (click)="changeChartType('line')">Line Chart</button>
+      <button (click)="changeChartType('pie')">Pie Chart</button>
+      <button (click)="changeChartType('doughnut')">Doughnut Chart</button>
+      <button (click)="changeChartType('polarArea')">Area Chart</button>
+    </div>
+  </div>
